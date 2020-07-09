@@ -12,6 +12,7 @@
 
 int main()
 {
+    std::cout << "Im Server!\n";
     WSADATA wsaData;
     WSAStartup(MAKEWORD(2, 2), &wsaData);
 
@@ -41,7 +42,7 @@ int main()
     closesocket(hListen);
 
     WSACleanup();
-    std::cout << "Hello World!\n";
+
 }
 
 // 프로그램 실행: <Ctrl+F5> 또는 [디버그] > [디버깅하지 않고 시작] 메뉴

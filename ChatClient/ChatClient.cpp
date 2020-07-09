@@ -13,6 +13,7 @@
 
 int main()
 {
+    printf("Im Client!\n");
 	WSADATA wsaData;
 	WSAStartup(MAKEWORD(2, 2), &wsaData);
 
